@@ -1,0 +1,5 @@
+DEBUG=True
+MYSQL_ROOT_PASSWORD: docker
+MYSQL_DATABASE: docker
+MYSQL_USER: docker
+MYSQL_PASSWORD: docker

@@ -1,0 +1,26 @@
+version: '2'
+services:
+  codex:
+    container_name: codex
+    env_file: ./envs/environment
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "python xblock-sdk/manage.py runserver 0.0.0.0:7000"
+    volumes:
+      - ./:/code
+    ports:
+      - "7000:7000"
+    links:
+      - mysql
+
+  mysql:
+    container_name: mysql
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: docker
+      MYSQL_DATABASE: docker
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: docker
+    ports:
+      - "1306:3306"

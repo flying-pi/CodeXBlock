@@ -1,0 +1,12 @@
+codex/__init__.py
+codex/codex.py
+codex/static/README.txt
+codex/static/css/codex.css
+codex/static/html/codex.html
+codex/static/js/src/codex.js
+codex_xblock.egg-info/PKG-INFO
+codex_xblock.egg-info/SOURCES.txt
+codex_xblock.egg-info/dependency_links.txt
+codex_xblock.egg-info/entry_points.txt
+codex_xblock.egg-info/requires.txt
+codex_xblock.egg-info/top_level.txt
